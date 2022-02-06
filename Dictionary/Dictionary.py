@@ -1,28 +1,40 @@
-﻿from Module import*
-from random import*
-sonastik = {}
-file = open("C_C.txt","r")
-for line in file:
-    k,v = line.strip().split("-")
-    sonastik[k.strip()] = v.strip()
+﻿def failist_sõnastikusse():
+    sonastik = {}
+    file = open("CaC.txt","r",encoding = "utf-8-sig")
+    for line in file:
+        linn,pealinn = line.strip().split(":")
+        sonastik[linn.strip()] = pealinn.strip()
+    file.close()
+    return sonastik
+
+sonastik = failist_sõnastikusse()
 
 vastus = True
 while vastus:
     print("""
-    1. Kõik riigid ja pealinnad
-    2. Polnoreff
-    3. Uus riik või pealinn
-    4. Viga parandamine
-    5. Test
-    6. Rääkimine
-    7. Välja minna""")
+    1. Все страны и столицы
+    2. Поиск
+    3. Новая страна и столица
+    4. Исправление ошибок
+    5. Тест
+    6. Озвучивание
+    7. Выйти""")
     vastus = input(" >>> ")
     if vastus == "1":
         print(sonastik)
     elif vastus == "2":
-        print()
+        slovo = input("Введите страну или столицу для получения большей информации о ней >>> ")
+        if slovo in sonastik:
+            print(slovo + " - " + sonastik[slovo])
+        else:
+            print("Такой страны или столицы ещё не существует")
     elif vastus == "3":
-        print()
+        slovo = input("Введите страну, которую хотите добавить >>> ")
+        slovo2 = input("Введите страну, которую хотите добавить >>> ")
+        with open("CaC.txt","a",encoding = "utf-8-sig") as fail:
+            fail.write(slovo + ":" + slovo2 + "\n")
+        sonastik[slovo] = slovo2
+        print(f'Страна "{slovo}" и её столица "{slovo2}" добавлены')
     elif vastus == "4":
         print()
     elif vastus == "5":
@@ -35,4 +47,4 @@ while vastus:
     elif vastus == "7":
         vastus = False
     else:
-        print("Vale andmetüüp!")
+        print("Неправильный тип данных!")
