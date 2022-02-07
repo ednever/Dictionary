@@ -48,5 +48,3 @@ Ungari:Budapest
 Valgevene:Minsk
 Vatikan:Vatican
 Россия:Москва
-biba:boba
-buba:boba
