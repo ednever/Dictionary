@@ -1,4 +1,4 @@
-Albaania:Tirana
+﻿Albaania:Tirana
 Andorra:Andorra-la-Vella
 Armeenia:Jerevan
 Aserbaidsaan:Bakuu
@@ -6,7 +6,7 @@ Austria:Viin
 Belgia:Brussel
 Bosnia ja Hertsegoviina:Sarajevo
 Bulgaaria:Sofia
-Eesti:Tallinn
+Эстония:Таллинн
 Gruusia:Thbilisi
 Hispaania:Madrid
 Horvaatia:Zagreb
@@ -39,14 +39,14 @@ Slovakkia:Bratislava
 Sloveenia:Ljubljana
 Soome:Helsingi
 Suurbritannia:London
-�veits:Bern
+Рveits:Bern
 Taani:Kopenhaagen
-T�ehhi:Praha
+Tрehhi:Praha
 Turgi:Ankara
 Ukraina:Kiiev
 Ungari:Budapest
 Valgevene:Minsk
 Vatikan:Vatican
-Venemaa:Moskva
-��:����
-Норм:Рова
+Россия:Москва
+biba:boba
+buba:boba
